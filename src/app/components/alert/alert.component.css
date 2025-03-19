@@ -1,0 +1,45 @@
+p {
+  text-align: center;
+  padding-block: 20px;
+  background-color: #deebff;
+}
+
+header {
+  background-color: white;
+  color: black;
+}
+
+.header-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 15px;
+}
+
+menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+li {
+  font-size: 17px;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  padding-inline: 20px;
+  color: black;
+}

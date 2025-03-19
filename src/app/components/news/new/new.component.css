@@ -1,0 +1,43 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Charlie Display", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+article {
+  background-color: white;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: rgba(9, 30, 66, 0.15) 0px 0.5rem 1rem 0px;
+}
+
+img {
+  width: 555px;
+}
+
+svg {
+  width: 32px;
+  height: 32px;
+}
+
+.right {
+  padding-inline: 32px;
+}
+
+p {
+  font-size: 20px;
+  color: #091E42;
+}

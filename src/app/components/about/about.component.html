@@ -1,0 +1,11 @@
+<section>
+  <h3>El ABC de Trello</h3>
+  <h2>Tu centro neurálgico de productividad</h2>
+  <p>Mantente organizado y eficiente con la bandeja de entrada, los tableros y el planificador. Cada tarea pendiente, idea o responsabilidad, por pequeña que sea, tiene su lugar, lo que te mantiene a tu mejor rendimiento.</p>
+  <div class="about-items">
+    <div class="about-items-container">
+      <app-about-item *ngFor="let item of items; let i = index" [title]="item.title" [description]="item.description" [isActive]="item.isActive" (activeChange)="toggleActive(i)"></app-about-item>
+    </div>
+    <img src="/assets/inbox-slider.webp" alt="">
+  </div>
+</section>

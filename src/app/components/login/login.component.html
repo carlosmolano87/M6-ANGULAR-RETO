@@ -1,0 +1,11 @@
+<p>login works!</p>
+<a routerLink="/">Go back home</a>
+
+<form [formGroup]="loginForm" (ngSubmit)="submit()">
+  <input type="text" name="username" placeholder="Username" formControlName="username">
+  <input type="password" name="password" placeholder="***********" formControlName="password">
+  <button type="submit">Enviar</button>
+  <span *ngIf="this.loginForm.controls.password.errors?.['required'] && this.loginForm.controls.password.touched">LA contraseña es requerida</span>
+  <span *ngIf="this.loginForm.controls.password.errors?.['minlength']  && this.loginForm.controls.password.touched">LA contraseña no tiene la longitud esperada</span>
+</form>
+

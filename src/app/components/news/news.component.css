@@ -1,0 +1,29 @@
+section {
+  background-color: rgb(0, 101, 255);
+  padding-block: 60px;
+  height: 938px;
+}
+
+h2, p {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-family: "Charlie Display", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  width: 720px;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+div {
+  display: grid;
+  gap: 50px;
+}
