@@ -48,7 +48,7 @@ export class TransactionsComponent implements OnInit {
   }
 
   getSaldo(): void {
-    this.consultasaldoService.getSaldo().subscribe((data) => {
+    this.consultasaldoService.getSaldo('1234567890').subscribe((data) => {
       console.log(data);
       this.tipoCuenta = data.tipoCuenta;
       this.nroCuenta = data.numeroCuenta;
