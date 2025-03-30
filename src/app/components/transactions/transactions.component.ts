@@ -23,6 +23,7 @@ export class TransactionsComponent implements OnInit {
   codigoTransaccion: any;
   valortransaccion: any;
   historialTransacciones: any[] = [];
+  ipSimulada: string;
 
   constructor(private datePipe: DatePipe, public state: State, private consultasaldoService: ConsultasaldoService,
     private consultahistoriaService: ConsultaHistoriaService, private router:Router) { }
@@ -36,6 +37,14 @@ export class TransactionsComponent implements OnInit {
     const ahora = new Date();
     this.horaActual = this.datePipe.transform(ahora, 'HH:mm:ss');
     this.fechaActual = this.datePipe.transform(ahora, 'dd/MM/yyyy');
+  }
+
+  generarIpSimulada(): void {
+    this.ipSimulada = `${this.generarNumeroAleatorio(100, 255)}.${this.generarNumeroAleatorio(0, 255)}.${this.generarNumeroAleatorio(0, 255)}.${this.generarNumeroAleatorio(1, 254)}`;
+  }
+
+  generarNumeroAleatorio(min: number, max: number): number {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
   getSaldo(): void {

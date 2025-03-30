@@ -39,7 +39,7 @@
   }
   
   button {
-    background-color: #ffee00;
+    /*background-color: #ffee00;
     border: none;
     border-radius: 5px;
     padding: 20px;
@@ -51,17 +51,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center;*/
+
+    background-color: #FDDA24;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
   }
   
   button:hover {
-    background-color: #f0e000;
+    /*background-color: #f0e000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
+    transform: translateY(-2px);*/
+
+    background-color: #FEE66C;
   }
 
   .saldo {
-    background-color: #ffee00;
+    background-color: #FDDA24;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
@@ -124,7 +134,7 @@ tr:hover {
 
 
 .historia {
-  background-color: #ffee00;
+  background-color: #FDDA24;
   border-radius: 10px;
   padding: 20px;
   margin: 20px auto;
