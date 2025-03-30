@@ -1,0 +1,85 @@
+header {
+    background-color:white;
+    color:black
+  }
+  
+  .header-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 15px;
+  }
+  
+  menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  li {
+    font-size: 17px;
+  }
+  
+  .tramite{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px; 
+    display: inline-block;
+  }
+
+  #entrar{
+    background-color:#fdda24;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px; 
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  button {
+    font-family: inherit;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Botón Transparencia (negro) */
+  .btn-black {
+    background-color: black;
+    color: white;
+  }
+  
+  .btn-black:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  
+  /* Botón Login (amarillo estilo Bancolombia) */
+  .btn-yellow {
+    background-color: #ffd200;
+    color: black;
+  }
+  
+  .btn-yellow:hover {
+    background-color: #e6be00;
+    transform: scale(1.05);
+  }
+  
+  button a {
+    text-decoration: none;
+    color: inherit;
+  }
+  

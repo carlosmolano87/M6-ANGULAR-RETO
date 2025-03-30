@@ -1,0 +1,171 @@
+section {
+  background-color: #f3f3f5;
+  padding-top: 160px;
+  padding-bottom: 60px;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Charlie Display", sans-serif;
+  font-weight: normal;
+  line-height: 60px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 17px;
+  font-family: "Charlie Text", sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgb(223, 225, 230);
+  width: 300px;
+}
+
+button {
+  border-radius: 5px;
+  color: white;
+  background-color: #0065ff;
+  padding: 10px;
+  border: none;
+  font-size: 17px;
+  font-family: "Charlie Text", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s background-color;
+}
+
+button:hover {
+  background-color: rgb(7, 71, 166);
+}
+
+.form-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* ==== CARRUSEL ==== */
+.carousel-container {
+  position: relative;
+  max-width: 900px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2C2A29;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 25px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  max-width: 80%;
+}
+
+.carousel-text h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #FFD200; /* Amarillo Bancolombia */
+}
+
+.carousel-text p {
+  font-size: 16px;
+}
+
+/* Botones de navegación del carrusel */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #2C2A29;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease-in-out;
+}
+
+.carousel-btn:hover {
+  background-color: #FFD200;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.center {
+  flex: 1;
+  text-align: center;
+}
+
+.right {
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+}

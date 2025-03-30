@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/assets/imgLogin.jpg") center center/cover;
+}
+.container_primary{
+    background: transparent;
+    width: 420px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.container_primary h1{
+    font-size: 2rem;
+    text-align: center;
+
+}
+.input_box{
+    text-align: center;
+    position: relative;
+    margin: 30px 0;
+}
+.input_box input{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);   
+}
+.input_box input::placeholder{
+    color: #fff;
+}
+.input_box i{
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.recordar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.recordar a{
+    color: #fff;
+    text-decoration: none;
+}
+.recordar a:hover{
+    text-decoration: underline;
+}
+.recordar input{
+    margin-right: 3px;
+}
+.container_primary button{
+    height: 45px;
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    font-weight: 600;
+}
+.registro{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.registro a{
+    color: #fff;
+    text-decoration: none;    
+}
+.registro a:hover{
+    text-decoration: underline;    
+}

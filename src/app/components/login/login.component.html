@@ -1,0 +1,29 @@
+<body>
+    <div class="container_primary">
+      <form [formGroup]="loginForm" (ngSubmit)="enviar()">
+        <h1>login</h1>
+        <div class="input_box">
+          <input type="text" formControlName="username" placeholder="Usuario">
+          <i class="bi bi-person-check"></i>
+        </div>
+        <div class="input_box">
+          <input type="password" formControlName="password" placeholder="Contraseña">
+          <i class="bi bi-key-fill"></i>
+        </div>
+        <div class="recordar">
+          <label>
+            <input type="checkbox">Recordar
+          </label>
+          <a href="#">Olvidaste tu constraseña</a>
+        </div>
+        <button type="submit" class="boton">
+          Ingresar
+        </button>
+        <div class="registro">
+          <p>
+            ¿No tienes cuenta? <a href="#">Registrar</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
