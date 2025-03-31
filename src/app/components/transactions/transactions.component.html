@@ -27,8 +27,8 @@
   
     <!-- Fecha, Hora e IP Simulada -->
     <div class="date-time">
-      <p>Fecha: <strong>{{ fechaActual }}</strong></p>
-      <p>Hora: <strong>{{ horaActual }}</strong></p>
+      <!--<p>Fecha: <strong>{{ fechaActual }}</strong></p>-->
+      <!--<p>Hora: <strong>{{ horaActual }}</strong></p>-->
       <p>IP: <strong>192.168.110.20</strong></p>
       <p>Usuario: <strong>{{ state.userEmail$ | async }}</strong></p>
     </div>
@@ -64,8 +64,8 @@
         <tbody>
           <tr *ngFor="let transaccion of historialTransacciones">
             <td>{{ transaccion.Tipo }}</td>
-            <td>{{ transaccion.Fecha | date:'dd/MM/yyyy HH:mm' }}</td>
-            <td>{{ transaccion.Monto | currency }}</td>
+            <td>{{ transaccion.Fecha | date:'dd/MM/yyyy HH:mm' }}</td> <!--uso de pipe-->
+            <td>{{ transaccion.Monto | currency }}</td> <!--uso de pipe-->
           </tr>
         </tbody>
       </table>

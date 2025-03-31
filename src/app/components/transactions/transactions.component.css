@@ -71,7 +71,7 @@
   }
 
   .saldo {
-    background-color: #FDDA24;
+    background-color: white;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
@@ -134,7 +134,7 @@ tr:hover {
 
 
 .historia {
-  background-color: #FDDA24;
+  background-color: #fcfcfc;
   border-radius: 10px;
   padding: 20px;
   margin: 20px auto;

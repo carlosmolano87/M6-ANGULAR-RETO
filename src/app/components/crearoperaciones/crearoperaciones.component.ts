@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+/*import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { RealizaroperacionesService } from 'src/app/servicios/realizaroperaciones.service';
 
@@ -56,6 +56,41 @@ export class CrearoperacionesComponent {
       },
       error: (err) => {
         alert('Error al realizar la transacción: ' + descripcionTransaccion);
+      }
+    });
+  }
+}*/
+
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { RealizaroperacionesService } from 'src/app/servicios/realizaroperaciones.service';
+
+@Component({
+  selector: 'app-crearoperaciones',
+  templateUrl: './crearoperaciones.component.html',
+  styleUrls: ['./crearoperaciones.component.css']
+})
+export class CrearoperacionesComponent {
+  formulario: FormGroup;
+
+  constructor(private fb: FormBuilder, private realizaroperacionesService: RealizaroperacionesService) {
+    this.formulario = this.fb.group({
+      codigoTransaccion: [''],
+      monto: ['']
+    });
+  }
+
+  enviarFormulario() {
+    const codigoTransaccion = Number(this.formulario.value.codigoTransaccion);
+    const monto = Number(this.formulario.value.monto);
+
+    this.realizaroperacionesService.crearOperacion(codigoTransaccion, monto).subscribe({
+      next: (response) => {
+        alert('Transacción realizada con éxito');
+        this.formulario.reset();
+      },
+      error: (err) => {
+        alert('Error al realizar la transacción');
       }
     });
   }
