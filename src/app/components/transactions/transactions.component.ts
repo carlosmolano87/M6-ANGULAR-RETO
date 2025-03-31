@@ -60,14 +60,14 @@ export class TransactionsComponent implements OnInit {
   }
 
   getHistoria(): void {
-    this.consultahistoriaService.getHistoria().subscribe((data) => {
-      this.historialTransacciones = data;
-      console.log(this.historialTransacciones);
+    this.consultahistoriaService.getHistoria('1234567890').subscribe((data) => {
+      this.historialTransacciones = data; // Ahora debe contener objetos JSON correctos
+      console.log(this.historialTransacciones); // Verifica en consola que sean objetos
       this.mostrarHistoria = true;
-      this.mostrarSaldo = false;      
-    }
-    );
+      this.mostrarSaldo = false;
+    });
   }
+
   
   logout(): void {
     // Reinicia todos los estados
