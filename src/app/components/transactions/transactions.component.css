@@ -118,7 +118,7 @@ th, td {
 }
 
 th {
-  background-color: #f5d000;
+  background-color: #FF7F41;
   color: #333;
   font-weight: bold;
   text-align: center;
@@ -141,7 +141,7 @@ tr:hover {
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
-  border: 1px solid #e6d600;
+  border: 1px solid #FF7F41;
   box-sizing: border-box;
 }
 .historia h3 {
@@ -149,7 +149,7 @@ tr:hover {
   margin-top: 0;
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: 1px solid #e6d600;
+  border-bottom: 1px solid #FF7F41;
 }
 
 @media screen and (max-width: 768px) {

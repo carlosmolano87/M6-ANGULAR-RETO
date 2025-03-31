@@ -17,14 +17,14 @@ export class LoginComponent {
 
   loginForm = this.formBuilder.group({
     username: ['', [Validators.required, Validators.minLength(3)]],
-    password: ['', [Validators.required, Validators.minLength(3)]]
+    password: ['', [Validators.required, Validators.minLength(6)]]
   })
 
   enviar() {
     if (this.loginForm.valid) {
       const usuario = this.loginForm.get('username')?.value;
       const password = this.loginForm.get('password')?.value;
-      if(usuario === 'car' && password === '123') {
+      if(usuario === 'carlos' && password === '123456') {
         console.log('Usuario logueado');
         this.state.userEmail = 'carlosmolano@gmail.com';
         console.log('Usuario logueado2');
