@@ -90,7 +90,7 @@ export class CrearoperacionesComponent {
         this.formulario.reset();
       },
       error: (err) => {
-        alert('Error al realizar la transacción');
+        //alert('Error al realizar la transacción');
       }
     });
   }
